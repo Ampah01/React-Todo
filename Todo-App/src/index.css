@@ -101,13 +101,15 @@
     background-color: white;
     border: 1px solid gray;
     margin-left: 10px;
+    cursor: pointer
 
 }
 .down-button {
     padding: 10px ;
     background-color: white;
     border: 1px solid gray;
-    margin-left: 10px
+    margin-left: 10px;
+    cursor: pointer
 }
 
 @media (max-width: 1000px) {
