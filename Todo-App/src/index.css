@@ -1,1 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+}
 
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%; 
+    margin: 0 auto
+} 
+
+.todo-container h1 {
+    text-align: center;
+}
+
+.first-container {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%
+}
+
+.input-todo {
+    width: 100%;
+    border: 2px solid rgb(23, 102, 91);
+    padding: 15px 10px;
+    color: rgb(14, 13, 13);
+    font-size: 18px;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.input-todo::placeholder{
+    font-size: 17px;
+}
+
+.add-button {
+    padding: 10px 20px;
+    margin-left: -2px;
+    border: 2px solid rgb(23, 102, 91);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(32, 117, 32, 1);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: opacity .15s;
+}
+.add-button:hover {
+    opacity: 0.9;
+}
+.add-button:active {
+    opacity: 1;
+}
+
+.todo-list {
+    width: 100%;
+    list-style: none;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: rgb(201, 200, 200);
+    padding: 10px;
+    border: 1px solid rgb(204, 202, 202);;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+.task {
+    flex: 1;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(204, 202, 202);
+}
+
+.delete-button {  
+    padding: 10px 20px;
+    margin-left: -2px;
+    border: none;
+    background-color: rgb(192, 6, 6);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: opacity .15s;
+    margin-left: 10px
+}
+.delete-button:hover {
+    opacity: 0.9;
+}
+.delete-button:active {
+    opacity: 1;
+}
+
+.up-button {
+    padding:10px ;
+    background-color: white;
+    border: 1px solid gray;
+    margin-left: 10px;
+
+}
+.down-button {
+    padding: 10px ;
+    background-color: white;
+    border: 1px solid gray;
+    margin-left: 10px
+}
+
+@media (max-width: 1000px) {
+ 
+    .todo-container {
+        width: 80%;
+        margin: auto
+    }
+    .todo-list {
+        width: 100%
+    }
+
+}
+@media (max-width: 500px) {
+    .task {
+        font-size: 17px;
+    }
+    .input-todo {
+        padding: 10px 10px;
+        font-size: 17px;
+    }
+    .delete-button{  
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    .up-button {
+        padding: 5px ;
+        margin-left: 3px;   
+    }
+    .down-button {
+        padding: 5px ;
+        margin-left: 2px;
+    }
+}
